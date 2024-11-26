@@ -1,3 +1,4 @@
-html{
-    align-content: center;
+body.Website{
+    max-width: 500px;
+    margin: auto;
 }

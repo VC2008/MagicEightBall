@@ -1,47 +1,59 @@
 let userName = prompt("Greetings, whats is your name?")
 //Input
-userName ? document.getElementById('greeting').innerText=`Hello, ${userName}!` : document.getElementById('greeting').innerText='Hello Stranger'
+
+let responseIMG = document.getElementById('response-img')
+let responseText = document.getElementById('response-text')
+let greeting = document.getElementById('greeting')
+
+userName ? (greeting.innerText= `Hello, ${userName}!` )
+: (greeting.innerText= 'Hello Stranger')
 
 
 function shakeMagic8Ball(){
-    let userQuestion = "Will I travel this year?";
+    let userQuestion = prompt("What Do You Want To Ask The Bear?")
     console.log(userQuestion);
     
     //DO NOT TOUCH
     let randomNumber = Math.floor(Math.random()* 8);
     let eightBall = '';
+    let imageChoice = ''
     
     switch (randomNumber) {
       case 0:
-        console.log('Yes');
+          eightBall = 'Yes';
+          imageChoice = ''
         break;
       case 1:  
-      console.log('It is certain');
+        eightBall = 'It is certain';
         break;
       case 2:
-        console.log('It is decidedly so');
+          eightBall = 'It is decidedly so';
         break;
       case 3:
-        console.log('Reply hazy try again');
+          eightBall = 'Reply hazy try again';
         break;
       case 4:
-        console.log('Cannot predict now');
+          eightBall = 'Cannot predict now';
         break;
       case 5:
-        console.log('Do not count on it');
+          eightBall = 'Do not count on it';
         break;
       case 6:
-        console.log('My sources say no');
+          eightBall = 'No';
         break;
       case 7:
-        console.log('Outlook not so good');
+          eightBall = 'The Future Is Uncertain';
         break;
       case 8:
-        console.log('Signs point to yes');
+        eightBall = 'It Seems To Be So';
         break;
         
     }
     
     console.log(eightBall)
+
+   responseText.innerText = `${userName} Has Asked ${userQuestion} To The Almighty Djungelskog. The Bear Replies ${eightBall}!`
+
+   responseIMG.src = imageChoice
 }
 
