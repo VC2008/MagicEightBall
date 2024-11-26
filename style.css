@@ -1,4 +1,12 @@
-body.Website{
-    max-width: 500px;
-    margin: auto;
+body {
+    text-align: center;
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+p{
+    text-align: center;
+    color: cyan;
 }

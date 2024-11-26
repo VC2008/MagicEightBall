@@ -21,31 +21,39 @@ function shakeMagic8Ball(){
     switch (randomNumber) {
       case 0:
           eightBall = 'Yes';
-          imageChoice = ''
+          imageChoice = 'IMGS/FrontFacingDjungelskog.png'
         break;
       case 1:  
         eightBall = 'It is certain';
+        imageChoice = 'IMGS/FrontFacingDjungelskog.png'
         break;
       case 2:
           eightBall = 'It is decidedly so';
+          imageChoice = 'IMGS/FrontFacingDjungelskog.png'
         break;
       case 3:
           eightBall = 'Reply hazy try again';
+          imageChoice = 'IMGS/FrontFacingDjungelskog.png'
         break;
       case 4:
           eightBall = 'Cannot predict now';
+          imageChoice = 'IMGS/FrontFacingDjungelskog.png'
         break;
       case 5:
           eightBall = 'Do not count on it';
+          imageChoice = 'IMGS/FrontFacingDjungelskog.png'
         break;
       case 6:
           eightBall = 'No';
+          imageChoice = 'IMGS/FrontFacingDjungelskog.png'
         break;
       case 7:
-          eightBall = 'The Future Is Uncertain';
+          eightBall = 'It is Beyond My Understanding';
+          imageChoice = 'IMGS/FrontFacingDjungelskog.png'
         break;
       case 8:
         eightBall = 'It Seems To Be So';
+        imageChoice = 'IMGS/FrontFacingDjungelskog.png'
         break;
         
     }
